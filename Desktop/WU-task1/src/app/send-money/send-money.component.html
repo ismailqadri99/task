@@ -1,0 +1,22 @@
+<div>
+  <form #value="ngForm" (ngSubmit)="SendMoney()">
+    <div class="main">
+      <h2>Send Money Online</h2>
+      <div class="subHead-1">
+        <h5>Your receiver's country and Send amount</h5>
+
+        <select class="country" name="country" >
+          <option hidden selected value="country">Country name</option>
+          <option *ngFor="let country of countries" [value]="country">
+            {{ country }}
+          </option>
+        </select>
+        <div class="sub-1">
+          <input type="number" class="send" name="SendMoney" placeholder="Send Money"/>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-D3JDdQLBS6xg7AUtI6OIOa8U-LA1qjSCgg&usqp=CAU" width="30" height="30">
+          <input type="number" class="receive" name="receiveAmount" placeholder="Receive Amount"/>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,59 @@
+{
+  "CurrentData": [
+    {
+      "country": "Qatar",
+      "firstName": "Ismail",
+      "type": "Mobile",
+      "code": "971",
+      "phone": "4568657323",
+      "lastName": "Qadri",
+      "id": 1
+    },
+    {
+      "country": "India",
+      "firstName": "Amit",
+      "type": "Mobile",
+      "code": "91",
+      "phone": "9876954432",
+      "lastName": "Yadav",
+      "middleName": "Kumar",
+      "id": 2
+    },
+    {
+      "country": "Dubai",
+      "firstName": "yash",
+      "type": "TelePhone",
+      "code": "45",
+      "phone": "4568657325",
+      "id": 3
+    }
+  ],
+  "country": [
+    {
+      "Dubai": {
+        "isFirstNameRequired": true,
+        "isReqLastName": false,
+        "isReqMidName": true,
+        "code": "+971"
+      },
+      "India": {
+        "isFirstNameRequired": true,
+        "isReqLastName": true,
+        "isReqMidName": true,
+        "code": "+91"
+      },
+      "USA": {
+        "isFirstNameRequired": true,
+        "isReqLastName": true,
+        "isReqMidName": false,
+        "code": "+1"
+      },
+      "Qatar": {
+        "isFirstNameRequired": true,
+        "isReqLastName": true,
+        "isReqMidName": false,
+        "code": "+974"
+      }
+    }
+  ]
+}
