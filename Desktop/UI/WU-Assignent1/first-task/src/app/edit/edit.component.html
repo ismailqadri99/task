@@ -1,0 +1,133 @@
+<div>
+  <form #user="ngForm" (ngSubmit)="updateReceiver(user.value)">
+    <div class="main">
+      <h3>Receiver's Information</h3>
+
+      <div class="address">
+        <!-- <i class="fa-sharp fa-solid fa-envelope" style="color: #cececf"></i>  [(ngModel)]="selectedCountry" -->
+        <h6>For your saftey, make sure you know your receiver</h6>
+
+        <select
+          class="country"
+          name="country"
+          [(ngModel)]="receiverData.country"
+          (change)="CountryCode()"
+          required
+        >
+          <option hidden selected value="country">Country name</option>
+          <option *ngFor="let country of countries" [value]="country">
+            {{ country }}
+          </option>
+        </select>
+
+        <div class="personal">
+          <h5>Receiver's Personal Information</h5>
+        </div>
+        <div class="sub-1">
+          <input
+            type="text"
+            class="fname"
+            name="firstName"
+            placeholder="Receiver's firstname"
+            [(ngModel)]="receiverData.firstName"
+            required
+            #firstName="ngModel"
+            pattern="[a-zA-Z]+"
+          />
+         
+          <div class="val" *ngIf="isFormSubmitted && firstName.invalid && (firstName.dirty || firstName.touched)">
+            <div *ngIf="firstName.errors?.required">First name is required</div>
+            <div *ngIf="!isString(firstName.value)">First name must contain only letters.</div>
+          </div>
+          
+          <br /><br />
+
+          <ng-container *ngIf="isReqLastName()">
+            <input
+            required
+            #lastName="ngModel"
+            type="text"
+            class="lname"
+            name="lastName"
+            placeholder="Receiver's lastname"
+            [(ngModel)]="receiverData.lastName"
+            pattern="[a-zA-Z]+"
+             
+            />
+            <div class="val" *ngIf="isFormSubmitted && lastName.invalid && (lastName.dirty || lastName.touched)">
+              <div class="req-field" *ngIf="lastName.errors?.required">Last name is required</div>
+              <div *ngIf="!isString(lastName.value)">Last name must contain only letters.</div>
+            </div> 
+          </ng-container>
+          <br /><br />
+
+          <ng-container *ngIf="isReqMidName()">
+            <input
+              #middleName="ngModel"
+              type="text"
+              class="mname"
+              name="middleName"
+              placeholder="Receiver's middlename"
+              [(ngModel)]="receiverData.middleName"
+              pattern="[a-zA-Z]+"
+             
+            />
+            <div class="val" *ngIf="isFormSubmitted && middleName.invalid && (middleName.dirty || middleName.touched)">
+              <div *ngIf="middleName.errors?.required">Middle name is required</div>
+              <div *ngIf="!isString(middleName.value)">Middle name must contain only letters.</div>
+            </div>
+          </ng-container>
+          <br /><br />
+        </div>
+        <div class="end">
+          <select name="type" #type="ngModel" [(ngModel)]="receiverData.type" >
+            <option value="" disabled selected>Type</option>
+            <option value="Mobile">Mobile</option>
+            <option value="TelePhone">Telephone</option>
+          </select>
+          <br /><br />
+
+          <input
+            type="text"
+            class="code"
+            name="code"
+            placeholder="country code"
+            [(ngModel)]="receiverData.code"
+            required
+            #code="ngModel"
+            />
+  
+            <!-- Display validation error message if the country code is not entered -->
+            <div class="val" *ngIf="code.invalid && (code.dirty || code.touched)">
+              <div *ngIf="code.errors.required">Country code is required.</div>
+            </div>
+  
+          <input
+            type="text"
+            class="phone"
+            name="phone"
+            placeholder="Receiver's mobile no"
+            [(ngModel)]="receiverData.phone"
+            required
+            #phone="ngModel"
+            pattern="\d{10}"
+         
+          />
+
+          <!-- Display validation error message if the phone number is not entered -->
+          <div class="val" *ngIf="isFormSubmitted && !isPhoneNumberValid(phone.value) && (phone.dirty || phone.touched)">
+            <div *ngIf="phone.errors.required">Phone number is required.</div>
+            <div *ngIf="!isPhoneNumberValid(phone.value)">Phone number imust have exactly 10 digits.</div>
+          </div><br /><br />
+        </div>
+      </div>
+
+      <div class="submit">
+        <button type="button" (click)="OnClick(user)">Continue</button>
+      </div>
+      <div class="cancel">
+        <button type="submit" routerLink="/myReceiver">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>

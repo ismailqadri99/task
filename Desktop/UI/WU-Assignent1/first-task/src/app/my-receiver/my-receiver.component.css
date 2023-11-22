@@ -1,0 +1,39 @@
+.container{
+  margin: 100px auto;
+  width:40%;
+  line-height: 2.5;
+}
+.heading{
+  margin-top: -80px;
+}
+.content{
+  margin-top : 20px;
+  width: 250%;
+  background-color: white;
+  padding: 5px;
+  text-align:left;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 0px rgb(188, 187, 187);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 2px;
+}
+.container>button{
+  cursor: pointer;
+  width:91%;
+  height: 45px;
+  margin: 5% 0;
+  padding: 2%;
+  background-color: #045F86;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.content>i{
+  vertical-align: middle;
+  cursor: pointer;
+}
+.content>p{
+  width: 70%;
+}

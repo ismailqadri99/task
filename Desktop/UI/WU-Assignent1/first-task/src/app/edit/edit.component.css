@@ -1,0 +1,114 @@
+.main{
+  width: 75%;
+  background-color: white;
+  margin-bottom: 10px;
+  transform: translate(18%, 7%);
+ 
+  font-family:'Open Sans', sans-serif;
+}
+
+.main h3{
+  padding: 2%;
+  color: rgb(77, 75, 75);
+  /* font-weight: 10%; */
+}
+.main h6{
+  padding:0% 2% 0% 2%;
+  color: rgb(77, 75, 75);
+  /* font-size: medium; */
+
+}
+
+.country{
+  width: 95%;
+  height:6vh;
+  transform: translate(2.3%);
+  color: rgb(77, 75, 75);
+}
+
+.sub-1{
+width:90%;
+display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.submit button{
+  width: 98%;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 2%;
+  background-color: #045F86;
+  color: white;
+  border: none;
+  border-radius: 2px;
+ 
+}
+
+.cancel button{
+  width: 98%;
+  height: 45px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 2%;
+  background-color: #ababac;
+  color: white;
+  border: none;
+  border-radius: 2px;
+ 
+}
+
+.personal h5{
+  font-weight: bolder;
+  margin-left: 19px;
+  
+ }
+
+ .fname{
+  width: 47%;
+  height:6vh;
+  margin-left:2%;
+ }
+ .lname{
+  width: 47%;
+  height:6vh;
+  margin-left:2%;
+ }
+ .mname{
+  width:47%;
+  margin: 2% 2% 2% 2%;
+  height:6vh;
+ }
+
+ .end{
+  width:90%;
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left:2%;
+
+ }
+ .code{
+  width: 20%;
+  height:6vh;
+
+ }
+ .phone{
+  width: 50%;
+  height: 6vh;
+ }
+ .val {
+  color: red;
+  font-size: 12px;  
+}
+.req-field{
+  font-size: small;
+  /* color: rgb(236, 72, 72); */
+  margin-left: 25px;
+  margin-top: 0%;
+}

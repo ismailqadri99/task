@@ -1,0 +1,62 @@
+{
+  "CurrentData": [
+    {
+      "country": "Qatar",
+      "firstName": "Ismail",
+      "type": "Mobile",
+      "code": "971",
+      "phone": "4568657323",
+      "lastName": "Qadri",
+      "id": 1
+    },
+    {
+      "country": "India",
+      "firstName": "Amit",
+      "type": "Mobile",
+      "code": "91",
+      "phone": "9876954432",
+      "lastName": "Yadav",
+      "middleName": "Kumar",
+      "id": 2
+    },
+    {
+      "country": "Dubai",
+      "firstName": "yash",
+      "type": "TelePhone",
+      "code": "45",
+      "phone": "4568657325",
+      "id": 3
+    }
+  ],
+  "country": [
+    {
+      "Dubai": {
+        "isFirstNameRequired": true,
+        "isReqLastName": false,
+        "isReqMidName": true,
+        "code": "+971",
+        "currencyCode": "AED",
+        "flag": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAG5SURBVHja7JdLihRBEEBfVqUU6rQNggiCFxA8gswFRNy49gAeQdx4G8HbuHDvRkRUnKxPZ2dGhous6Y9TtavPZmITtYggXsWPSKOqrCkFK8stgAFKoOr1kiKAt8CD76/f/KYYj//u7bPpU28Mn199eGiBLabg7uWLUePLp08mB/j66xvA1gKVSkK9J/29guuxNCZrVX60905qZlD0xvd5XbPvmN22uo+XCFDZXI2Idjt0txuk9TFM+ve7Yk9MAkAPIKSuI3XdoEMX/aQAd4qSfYpHAI0RbVt0FGA/KYAtyvMMaBTUObRpBh2a0E3cgspewkkJQkDqGm3bQfNPL9/PtIQ+cmjC5OqbTaj9qppRcglCAFej3h9H8P9xnBUgCtRNBllYDj0QmxbWAkgxggiktFjg60PosAeMJnQtAIkRq7poBlIfK5cgRBQdzYC1dtLgVVVRluUJgEQo7XH0RminlBDCKUDK99AIwByXs4gcb0JJafaFc7aCjTlktQBIqpiVAPIYas5AcXEx6LCRzaxjKAn4465GjZ1zs13GBngMPAceLbyFfwJfTP8m2PR6SfGAM7eP07UB/g0Aw73uXdMbeJMAAAAASUVORK5CYII="
+
+      },
+      "India": {
+        "isFirstNameRequired": true,
+        "isReqLastName": true,
+        "isReqMidName": true,
+        "code": "+91"
+      },
+      "USA": {
+        "isFirstNameRequired": true,
+        "isReqLastName": true,
+        "isReqMidName": false,
+        "code": "+1"
+      },
+      "Qatar": {
+        "isFirstNameRequired": true,
+        "isReqLastName": true,
+        "isReqMidName": false,
+        "code": "+974"
+      }
+    }
+  ]
+}

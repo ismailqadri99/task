@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class = "heading">Receivers</h2>
+<table class="table">
+  <tbody> 
+    <tr  class="content" *ngFor="let data of receiverData">
+      <!-- <th scope="row">{{data.id}}</th> -->
+      <th scope="row">{{data.firstName}}</th>
+      <!-- <th scope="row">{{data.lastName}}</th> -->
+      <th scope="row">Show Details</th>
+      <!-- <th scope="row">{{data.phone}}</th> -->
+      <!-- <th scope="row">{{data.country}}</th> -->
+      <!-- <th><button (click)="deleteUser(data.id)">Delete</button></th> -->
+      <th><i routerLink="/editReceiver/{{data.id}}" class="fa fa-edit"></i></th>
+      <th> <i (click)="deleteUser(data.id)" class="fa fa-trash"></i></th>
+    </tr>
+  </tbody>
+</table>
+<button (click)="addReceiver()" class="add">Add Receiver</button>
+</div>
